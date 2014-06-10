@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script src="preview.js"></script>
+<script>
+
+$(document).ready(function()
+{
+	$('#file1').PreviewImage({
+		 ImageClientId: "uploadimage", 
+		 MaxWidth: "200",
+		 MaxHeight: "200"
+	});
+});
+
+</script>
+<style>
+.prev_container{
+	overflow: auto;
+	width: 300px;
+	height: 135px;
+}
+
+.prev_thumb{
+	margin: 10px;
+	height: 100px;
+}
+</style>
+<meta charset=utf-8 />
+<title>jQuery file upload</title>
+</head>
+<body>
+	<input class="file" id="file1" type='file' multiple title="test #1"/>
+	<div style="display: none;"><img id="uploadimage" src="" /></div>
+</body>
+</html>
